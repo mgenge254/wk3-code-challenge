@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("available-tickets").textContent = availableTickets;
   }
 
-  // Buy a ticket
+  
   buyTicketBtn.addEventListener("click", () => {
     if (currentFilm.capacity - currentFilm.tickets_sold > 0) {
       currentFilm.tickets_sold += 1;
