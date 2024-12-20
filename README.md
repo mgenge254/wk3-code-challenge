@@ -1,29 +1,25 @@
-# wk3-code-challenge
-# jflix - Movies Galore
+# Flatdango Movie Theater
 
-jflix is a simple web application designed to display a list of movies and their details, allowing users to explore movie information and buy tickets.
+## Overview
+Flatdango is a web application that allows users to view available movies, check their details, buy tickets, and view updated ticket availability. It uses a local JSON database and communicates with the backend using the Fetch API.
 
 ## Features
+- View movie details including poster, title, runtime, showtime, and available tickets.
+- See a list of all movies in the theater.
+- Purchase tickets for movies (updated in real-time).
+- Prevent purchasing if the movie is sold out.
 
-- **Movie Listing:** Displays a list of available movies.
-- **Movie Details:** Shows details such as poster, title, runtime, showtime, and available tickets for a selected movie.
-- **Buy Tickets:** Allows users to purchase tickets for a movie.
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- JSON Server (for local data storage)
 
-## File Structure
+## Setup
+1. Clone the repository.
+2. Install `json-server` by running `npm install -g json-server`.
+3. Run the backend server using `json-server --watch db.json --port 3000`.
+4. Open `index.html` in a web browser to view the application.
 
-- `index.html`: The main HTML file containing the structure of the webpage.
-- `jflix.css`: Stylesheet for the application to enhance its appearance.
-- `jflix.js`: JavaScript file for interactive functionality, such as handling user actions and dynamically displaying movie details.
-
-
-## Usage
-
-1. A list of movies will appear on the page under the "Films" section.
-2. Click on a movie to view its details, including:
-   - Poster image
-   - Title
-   - Runtime
-   - Showtime
-   - Number of available tickets
-3. Click the **Buy Ticket** button to reduce the available ticket count (requires JavaScript functionality to be implemented in `jflix.js`).
-
+## Contributing
+Feel free to fork and contribute to the project. Create an issue if you encounter any bugs or have feature requests.

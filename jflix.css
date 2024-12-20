@@ -1,110 +1,36 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
   }
   
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    margin: 0;
-  }
-  
-  /* Layout Styles */
-  #content {
+  #main {
     display: flex;
+    justify-content: space-around;
     padding: 20px;
+  }
+  
+  #film-details {
+    width: 60%;
+    text-align: center;
   }
   
   #films {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    width: 250px;
-    border-right: 2px solid #ccc;
+    width: 30%;
   }
   
   #films li {
-    padding: 15px;
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  #films li:hover {
-    background-color: #f0f0f0;
-  }
-  
-  #films li.sold-out {
-    background-color: #f2dede;
-    color: #a94442;
-  }
-  
-  #movie-details {
-    flex-grow: 1;
-    margin-left: 20px;
-  }
-  
-  #movie-details img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-  }
-  
-  #movie-details h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  #movie-details p {
-    font-size: 1.2rem;
+    background-color: #fff;
     margin: 5px 0;
-  }
-  
-  #buy-ticket {
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
   }
   
-  #buy-ticket:hover {
-    background-color: #45a049;
-  }
-  
-  #buy-ticket.sold-out {
-    background-color: #f44336;
+  .sold-out {
+    background-color: gray;
     cursor: not-allowed;
-  }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 768px) {
-    #content {
-      flex-direction: column;
-    }
-  
-    #films {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    #movie-details {
-      width: 100%;
-    }
   }
   
